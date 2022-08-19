@@ -9,6 +9,11 @@
       font-family: "Georgia" !important;
     }
 
+    .post-title {
+      margin-top: 75px;
+
+    }
+
     .post-list-heading {
       text-transform: lowercase;
     }
@@ -27,7 +32,9 @@
   </style>
   {%- seo -%}
   <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <!-- <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}"> -->
+  <link rel="stylesheet" href="/assets/main.css">
+
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
   {%- include google-analytics.html -%}
