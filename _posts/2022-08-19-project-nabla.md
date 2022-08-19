@@ -5,23 +5,48 @@ Using a dataset of tournament players, we can train AIs that can play Super Smas
 <br>
 *Note: this is a work in progress. The beginning is catered towards more casual readers and ends with a more technical writeup.*
 
-### General 
-Project Nabla trains deep neural networks using behavioral cloning and reinforcement learning. At a high level, that means it works in two parts: first, it uses a dataset of Slippi replays from tournament setups, learning to copy exactly what players are doing. At this point, it has no conception of what moves are "good" or "bad"; it simply tries to imitate the human players. In the second part, it plays against itself and receives rewards when it does damage/wins the stock. This reward propagates back to encourage actions that maximize the reward, leading to a more competent agent. By playing against itself continually, it continues to pose challenges at an appropriate level as it improves, leading to increasingly competent agents.
+### Training Description
+Project Nabla is trained using deep neural networks. At a high level, it works in two parts: first, it uses a dataset of Slippi replays from tournament setups, learning to copy exactly what players are doing. At this point, it has no conception of what moves are "good" or "bad"; it simply tries to imitate the human players. In the second part, it plays against itself and receives rewards when it does damage/wins the stock. The agents take actions that lead to more reward, increasing their competence. By playing against itself continually, it continues to pose challenges at an appropriate level as it improves, leading to increasingly competent agents.
+
 
 ### Videos 
+Toph plays against 2 frame delay Falco & Fox
 <iframe
     src="https://player.twitch.tv/?video=v1566070587&parent=bycn.github.io&time=1h1m16s"
     height="400"
     width="600"
     allowfullscreen>
 </iframe>
+
+Follow [@otter_collapse](https://twitter.com/otter_collapse) for updates, perhaps will make a video :)
 ## FAQ
 
+**How's this different from altf4's [SmashBot](https://www.youtube.com/watch?v=kxwPr9oxUMw) project? How's this different from Vlad Firoui's [Philip](https://www.youtube.com/watch?v=dXJUlqBsZtE) [projects](https://www.youtube.com/watch?v=zHtgqxRxqYg)?**
+altf4's project is trained by hard-coding using heuristics. As a result, it looks much less humanlike (but it's still very entertaining and not the point of their project!) Vlad's project is the most similar project; the difference is that we start off the agent with learning from Slippi replays while Vlad's starts from random actions. Note that he is also pursuing an independent project with the same goal; it's available on github (see the links below.)
 
-#### Relevant Links
 
+**What's the dataset it was trained on? What characters did it train against?**
+[Drive link](https://drive.google.com/file/d/1VqRECRNL8Zy4BFQVIHvoVGtfjz4fi9KC/view?usp=sharing) 
+Includes nearly 100k SLP files from tournament setups, pruned to remove handwarmers, doubles, <30 second matches, and others. Credit to altf4 for the original dataset and Vlad Firoui whose filtered fox dataset was used in the beginning. It's trained against all characters; Falcon was filtered out due to some (resolvable) bugs. No filtering/fine tuning using APM or MMR was used.
+
+**Does it have delayed reaction times?** No (it is trained with two frames of delay.) This is an area of future work; check out Vlad Firoui's previous work (links below).
+
+**Does it learn as it plays?** For the most part, no. It is trained once and deployed in a frozen state. (Technical note: it may have meta-learning properties as it is trained using a LSTM, but I haven't investigated this too much.)
+
+**How can I play against it?** Looking into hosting it on my twitch[@rakkob](https://twitch.tv/rakkob), but no promises.
+
+**What's your next steps?** I am mainly focusing on other projects currently. There is lots of interesting future work though—tackling the delayed reaction time, fine tuning on pro players, training against old opponents, etc. Reach out to me if you're interested in working on these ideas or others!
+
+**Where can I get more info / a community / contribute?** Join the Slippi Discord's #artificial-intelligence channel, and follow me on twitter for updates [@otter_collapse](https://twitter.com/otter_collapse).
+
+
+
+### Relevant Links & Credit
+Thanks to: Fizzi and the Slippi team (Nikki and others) for Slippi and the FFW code that allows us to speed up training **donate to Fizzi [here](https://www.patreon.com/fizzi36)**; altf4 for libmelee and much more; Vlad Firoui for initial dataset, headless Dolphin and related code, and various discussions and ideas;  Krohnos for gecko code for endless time; Aach, Lizardy, Raffle Winner, and Toph for playtesting early versions. 
+
+Slippi Discord: 
 
 ### Intro
 In recent years, game-playing AIs trained using deep reinforcement learning (RL) have found tremendous success, reaching superhuman levels in difficult games such as Go and StarCraft II. Indeed, this project is not the first to apply deep RL to Melee, and I encourage you to check out Vlad Firoui's work on Philip.
 
-...Work in progress :)
+...Work in progress!
