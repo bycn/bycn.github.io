@@ -33,7 +33,7 @@ Includes nearly 100k SLP files from tournament setups, pruned to remove handwarm
 
 **Does it learn as it plays?** For the most part, no. It is trained once and deployed in a frozen state. (Technical note: it may have meta-learning properties as it is trained using a LSTM, but I haven't investigated this too much.)
 
-**How can I play against it?** Looking into hosting it on my twitch[@rakkob](https://twitch.tv/rakkob), but no promises.
+**How can I play against it? Is the code available?** Looking into hosting it on my twitch[@rakkob](https://twitch.tv/rakkob), but no promises. The code is not going to be open sourced at this time.
 
 **What's your next steps?** I am mainly focusing on other projects currently. There is lots of interesting future work though—tackling the delayed reaction time, fine tuning on pro players, training against old opponents, etc. Reach out to me if you're interested in working on these ideas or others!
 
@@ -42,9 +42,19 @@ Includes nearly 100k SLP files from tournament setups, pruned to remove handwarm
 
 
 ### Relevant Links & Credit
-Thanks to: Fizzi and the Slippi team (Nikki and others) for Slippi and the FFW code that allows us to speed up training **donate to Fizzi [here](https://www.patreon.com/fizzi36)**; altf4 for libmelee and much more; Vlad Firoui for initial dataset, headless Dolphin and related code, and various discussions and ideas;  Krohnos for gecko code for endless time; Aach, Lizardy, Raffle Winner, and Toph for playtesting early versions. 
+Thanks to: Fizzi and the Slippi team (Nikki and others) for Slippi and the FFW code that allows us to speed up training **donate to Fizzi [here](https://www.patreon.com/fizzi36)**; altf4 for libmelee and much more; Vlad Firoui for initial dataset, headless Dolphin and related code, and various discussions, ideas, inspiration;  Krohnos for gecko code for endless time mode; Aach, Lizardy, Raffle Winner, and Toph for playtesting early versions. 
 
-Slippi Discord: 
+Slippi Discord (join #artificial-intelligence after getting a dev role): [https://discord.com/invite/YRzDxT5](https://discord.com/invite/YRzDxT5)
+
+Libmelee: [https://github.com/altf4/libmelee](https://github.com/altf4/libmelee)
+
+Vlad's libmelee and custom Dolphin w/ FFW and Null Video [https://github.com/vladfi1/libmelee/tree/dev](https://github.com/vladfi1/libmelee/tree/dev) [https://github.com/vladfi1/slippi-Ishiiruka/tree/exi-ai](https://github.com/vladfi1/slippi-Ishiiruka/tree/exi-ai)
+
+Public SLP Database v3 (compiled by altf4): [https://drive.google.com/file/d/1VqRECRNL8Zy4BFQVIHvoVGtfjz4fi9KC/view](https://drive.google.com/file/d/1VqRECRNL8Zy4BFQVIHvoVGtfjz4fi9KC/view)
+
+Vlad's open source imitation learning project [https://github.com/vladfi1/slippi-ai](https://github.com/vladfi1/slippi-ai)
+ and RL project [https://github.com/vladfi1/phillip](https://github.com/vladfi1/phillip)
+
 
 ### Intro
 In recent years, game-playing AIs trained using deep reinforcement learning (RL) have found tremendous success, reaching superhuman levels in difficult games such as Go and StarCraft II. Indeed, this project is not the first to apply deep RL to Melee, and I encourage you to check out Vlad Firoui's work on Philip.
