@@ -6,11 +6,11 @@ Using a dataset of tournament players, we can train AIs that can play Super Smas
 *Note: this is a work in progress. The beginning is catered towards more casual readers and ends with a more technical writeup.*
 
 ### General 
-Project Nabla trains deep neural networks through techniques known as behavioral cloning and reinforcement learning. At a high level, that means it works in two parts: first, it uses a dataset of Slippi replays from tournament setups, and then it plays against itself to improve. 
+Project Nabla trains deep neural networks using behavioral cloning and reinforcement learning. At a high level, that means it works in two parts: first, it uses a dataset of Slippi replays from tournament setups, learning to copy exactly what players are doing. At this point, it has no conception of what moves are "good" or "bad"; it simply tries to imitate the human players. To have it learn, it then plays against itself and receives rewards when it does damage/wins the stock. This reawrd propagates back to encourage actions that maximize the reward, leading to a more competent agent.
 
 ### Videos 
 <iframe
-    src="https://player.twitch.tv/?v1566070587&parent=bycn.github.io"
+    src="https://player.twitch.tv/?video=v1566070587&parent=bycn.github.io"
     height="400"
     width="600"
     allowfullscreen>
