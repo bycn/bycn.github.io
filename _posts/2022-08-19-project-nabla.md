@@ -1,9 +1,9 @@
 # Project Nabla: Towards human-like SSBM agents
-Using a dataset of tournament players, we can train AIs that can play Super Smash Bros. Melee in a competent and human-like manner.
+Using a dataset of tournament players, we can train AIs that play Super Smash Bros. Melee in a competent and human-like manner.
 <br>
 <hr/>
 <br>
-*Note: this is a work in progress. The beginning is catered towards more casual readers and ends with a more technical writeup.*
+*Note: This page is a high level overview; for technical details, please see [this post](/2022/08/19/project-nabla-writeup.html)*
 
 ### Training Description
 Project Nabla is trained using deep neural networks. At a high level, it works in two parts: first, it uses a dataset of Slippi replays from tournament setups, learning to copy exactly what players are doing. At this point, it has no conception of what moves are "good" or "bad"; it simply tries to imitate the human players. In the second part, it plays against itself and receives rewards when it does damage/wins the stock. The agents take actions that lead to more reward, increasing their competence. By playing against itself continually, it continues to pose challenges at an appropriate level as it improves, leading to increasingly competent agents.
@@ -51,8 +51,3 @@ Public SLP Database v3 (compiled by altf4): [https://drive.google.com/file/d/1Vq
 Vlad's open source imitation learning project [https://github.com/vladfi1/slippi-ai](https://github.com/vladfi1/slippi-ai)
  and RL project [https://github.com/vladfi1/phillip](https://github.com/vladfi1/phillip)
 
-
-### Intro
-In recent years, game-playing AIs trained using deep reinforcement learning (RL) have found tremendous success, reaching superhuman levels in difficult games such as Go and StarCraft II. Indeed, this project is not the first to apply deep RL to Melee, and I encourage you to check out Vlad Firoui's work on Philip.
-
-...Work in progress!
