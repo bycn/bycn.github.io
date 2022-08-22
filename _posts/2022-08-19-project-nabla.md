@@ -24,15 +24,15 @@ VOD of random Twitch viewers playing against it
 Follow [@otter_collapse](https://twitter.com/otter_collapse) for updates, perhaps will make a video :)
 ## FAQ
 
-**How's this different from altf4's [SmashBot](https://www.youtube.com/watch?v=kxwPr9oxUMw) project? How's this different from Vlad Firoui's [Philip](https://www.youtube.com/watch?v=dXJUlqBsZtE) [projects](https://www.youtube.com/watch?v=zHtgqxRxqYg)?**
+**How's this different from altf4's [SmashBot](https://www.youtube.com/watch?v=kxwPr9oxUMw) project? How's this different from Vlad Firoiu's [Philip](https://www.youtube.com/watch?v=dXJUlqBsZtE) [projects](https://www.youtube.com/watch?v=zHtgqxRxqYg)?**
 altf4's project is trained by hard-coding using heuristics. As a result, it looks much less humanlike (but it's still very entertaining and not the point of their project!) Vlad's project is the most similar project; the difference is that we start off the agent with learning from Slippi replays while Vlad's starts from random actions. Note that he is also pursuing an independent project with the same goal.
 
 
 **What's the dataset it was trained on? What characters did it train against?**
 [Drive link](https://drive.google.com/file/d/1VqRECRNL8Zy4BFQVIHvoVGtfjz4fi9KC/view?usp=sharing) 
-Includes nearly 100k SLP files from tournament setups, pruned to remove handwarmers, doubles, <30 second matches, and others. Credit to altf4 for the original dataset and Vlad Firoui whose filtered fox dataset was used in the beginning. It's trained against all characters; Falcon was filtered out due to some (resolvable) bugs. No filtering/fine tuning using APM or MMR was used.
+Includes nearly 100k SLP files from tournament setups, pruned to remove handwarmers, doubles, <30 second matches, and others. Credit to altf4 for the original dataset and Vlad Firoiu whose filtered fox dataset was used in the beginning. It's trained against all characters; Falcon was filtered out due to some (resolvable) bugs. No filtering/fine tuning using APM or MMR was used.
 
-**Does it have delayed reaction times? Does it learn as it plays?** It is trained with two frames of delay, while a human reaction time is around 18 frames. This is an area of future work; check out Vlad Firoui's previous work. It does not learn as it plays. It is trained once and deployed in a frozen state. (Technical note: it may have meta-learning properties as it is trained using a LSTM, but I haven't investigated this too much.)
+**Does it have delayed reaction times? Does it learn as it plays?** It is trained with two frames of delay, while a human reaction time is around 18 frames. This is an area of future work; check out Vlad Firoiu's previous work. It does not learn as it plays. It is trained once and deployed in a frozen state. (Technical note: it may have meta-learning properties as it is trained using a LSTM, but I haven't investigated this too much.)
 
 **How can I play against it? Is the code available?** Looking into hosting it on my twitch[@rakkob](https://twitch.tv/rakkob), but no promises. The code is not going to be open sourced at this time.
 
@@ -41,7 +41,7 @@ Includes nearly 100k SLP files from tournament setups, pruned to remove handwarm
 
 
 ### Relevant Links & Credit
-Thanks to: Fizzi and the Slippi team (Nikki and others) for Slippi and the FFW code that allows us to speed up training **donate to Fizzi [here](https://www.patreon.com/fizzi36)**; altf4 for libmelee and much more; Vlad Firoui for initial dataset, headless Dolphin and related code, and various discussions, ideas, inspiration;  Krohnos for gecko code for endless time mode; Aach, Lizardy, Raffle Winner, and Toph for playtesting early versions. 
+Thanks to: Fizzi and the Slippi team (Nikki and others) for Slippi and the FFW code that allows us to speed up training **donate to Fizzi [here](https://www.patreon.com/fizzi36)**; altf4 for libmelee and much more; Vlad Firoiu for initial dataset, headless Dolphin and related code, and various discussions, ideas, inspiration;  Krohnos for gecko code for endless time mode; Aach, Lizardy, Raffle Winner, and Toph for playtesting early versions. 
 
 Slippi Discord (join #artificial-intelligence after getting a dev role): [https://discord.com/invite/YRzDxT5](https://discord.com/invite/YRzDxT5)
 
