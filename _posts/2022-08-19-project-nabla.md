@@ -18,6 +18,9 @@ Toph plays against 2 frame delay Falco & Fox
     allowfullscreen>
 </iframe>
 
+VOD of random Twitch viewers playing against it
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ovuP4n1o_yY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Follow [@otter_collapse](https://twitter.com/otter_collapse) for updates, perhaps will make a video :)
 ## FAQ
 
