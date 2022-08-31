@@ -10,7 +10,10 @@ Project Nabla is trained using deep neural networks. At a high level, it works i
 
 
 ### Videos 
-Toph plays against 2 frame delay Falco & Fox
+IBDW & KJH react to the bot
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1BCVfL1vUq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Toph plays against 2 frame delay Falco & Fox 
 <iframe
     src="https://player.twitch.tv/?video=v1566070587&parent=bycn.github.io&time=1h1m16s"
     height="400"
