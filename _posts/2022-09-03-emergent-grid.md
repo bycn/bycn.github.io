@@ -31,3 +31,23 @@ The self-play is straightforward (no historical sampling, no populations) and bo
 Although I conceptually expected this to work, I still found myself somewhat surprised at the results. This was due to the difficulty of the problem, which although is aided by the natural curriculum of self-play, is still quite sparse for the hider to learn. It really is necessary to use extremely large batch sizes to overcome a weak gradient signal; but more than that, the larger scale also papers over a lot of the well-documented instabilities of RL. Once everything was set up properly, the first run worked — no tuning of hyperparameters or architectures necessary other than choosing reasonable defaults.
 
 *Research supported with Cloud TPUs from Google's TPU Research Cloud (TRC)*
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://bycn-github-io-2.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
