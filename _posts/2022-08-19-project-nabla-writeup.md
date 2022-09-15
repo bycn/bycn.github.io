@@ -66,3 +66,4 @@ In this work we trained human-like agents for Super Smash Bros. Melee through im
 Because bots are not allowed on unranked currently, we integrated with the [twitch API](https://github.com/bynect/pytmi) so any viewer can add themselves to a queue to play a direct match against the bot. The stream features a display utilizing [glitch](https://glitch.com) to host a full stack node.js web app. The app uses socket.IO to communicate between the front/back end and live-update the status of the queue. From the main process that runs the game loop, a separate thread is launched with a helper object that manages the chat bot and the website requests. The helper is shared with the main process so that game loop events can be communicated to the bot/requests and vice versa. A simple leaderboard is persisted by saving state to a file.
 
 *Research supported with Cloud TPUs from Google's TPU Research Cloud (TRC)*
+
