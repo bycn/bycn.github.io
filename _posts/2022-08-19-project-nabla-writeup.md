@@ -32,7 +32,7 @@ Artificial limits to reaction time are commonly deployed in order to compare age
 
 ### Implementation Details
 #### Observations
-Like previous work, we use a low-dimensional state as input. The main features are action_state, stage, character, facing, invulnerable, jumps_left, on_ground, percent, shield_strength, x/y position, and # stocks. When applicable, features are normalized to between -1 and 1. The observation consists of our own and the opponent's state, in addition to our last action (not the opponent's).
+Like previous work, we use a low-dimensional state as input. The main features are action state, stage, character, facing, invulnerable, jumps left, on the ground, percent, shield strength, x/y position, and # stocks. When applicable, features are normalized to between -1 and 1. The observation consists of our own and the opponent's state, in addition to our last action (not the opponent's).
 #### Actions
 The gamecube controller is represented by an autoregressive action space. The main and c sticks are represented by their x and y position, which are each discretized into 17 parts. L/R and X/Y are collapsed into one button each, and instead of predicting whether to press each button individually, we predict two button *presses*, each of which could be one of ["A", "B', "L", "X", "Z"]. 
 #### Rewards
