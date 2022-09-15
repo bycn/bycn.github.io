@@ -37,7 +37,7 @@ Includes nearly 100k SLP files from tournament setups, pruned to remove handwarm
 
 **Does it have delayed reaction times? Does it learn as it plays?** It is trained with two frames of delay, while a human reaction time is around 18 frames. This is an area of future work; check out Vlad Firoiu's previous work. It does not learn as it plays. It is trained once and deployed in a frozen state. (Technical note: it may have meta-learning properties as it is trained using a LSTM, but I haven't investigated this too much.)
 
-**How can I play against it? Is the code available?** I have been hosting it on my twitch[@rakkob](https://twitch.tv/rakkob) while interest lasts — although only limited to 1 person at a time, it's reached thousands of plays over a few weeks. It features integration with the [twitch API](https://github.com/bynect/pytmi) so anybody can add themselves to a queue; a challenge to defeat the bot as fast as possible; a display utilizing [glitch](https://glitch.com) to host a full stack node.js app using socket.IO to live-update the status of the queue and a leaderboard for the challenge. The code is not going to be open sourced at this time.
+**How can I play against it? Is the code available?** I have been hosting it on my twitch[@rakkob](https://twitch.tv/rakkob) while interest lasts — although only limited to 1 person at a time, it's reached thousands of plays over a few weeks. The code is not going to be open sourced at this time.
 
 **What's your next steps? How do I follow along?** I am mainly focusing on other projects currently. There is lots of interesting future work though—tackling the delayed reaction time, fine tuning on pro players, training against old opponents, etc. Reach out to me if you're interested in working on these ideas or others! Join the Slippi Discord's #artificial-intelligence channel, and follow me on twitter for updates [@otter_collapse](https://twitter.com/otter_collapse).
 
@@ -57,3 +57,4 @@ Public SLP Database v3 (compiled by altf4): [https://drive.google.com/file/d/1Vq
 Vlad's open source imitation learning project [https://github.com/vladfi1/slippi-ai](https://github.com/vladfi1/slippi-ai)
  and RL project [https://github.com/vladfi1/phillip](https://github.com/vladfi1/phillip)
 
+*Research supported with Cloud TPUs from Google's TPU Research Cloud (TRC)*
