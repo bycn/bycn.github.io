@@ -1,7 +1,7 @@
 ## hello! 🦦
 I'm an independent research engineer working on reinforcement learning. I write about my projects here and hopefully other topics in the future.
 
-twitter[@otter_collapse](https://twitter.com/otter_collapse), twitch[@rakkob](https://twitch.tv/rakkob), gmail[@bryanchen.bxc](/?why_does_mailto_exist???)
+<!-- twitter[@otter_collapse](https://twitter.com/otter_collapse), twitch[@rakkob](https://twitch.tv/rakkob), gmail[@bryanchen.bxc](/?why_does_mailto_exist???) -->
 
 ## works
 - [Project Nabla](/2022/08/19/project-nabla.html): bringing imitation + RL to SSBM to create human-like platform fighter AIs.
